@@ -1,0 +1,42 @@
+.large_productscreen{
+ border-radius: 0.5rem;
+  width: 25%;
+  max-height: 25rem;
+}
+.col-1_productscreen {
+ flex: 1 1 25rem;
+}
+
+.card_productscreen {
+ border: 0.3rem #c0c0c0 solid;
+ background-color: hsl(7, 100%, 98%);
+ border-radius: 1rem;
+ margin: 1.5rem;
+}
+.card-body_productscreen {
+ padding: 0.5rem;
+}
+.card-body_productscreen > * {
+ margin-bottom: 0.5rem;
+}
+.block_productscreen{
+ cursor: pointer;
+ width: 100%;
+ padding: 1rem;
+ background-color: transparent;
+ border-radius: 5rem;
+ text-transform: uppercase;
+   font-family: "Grand Hotel",
+   cursive,
+   sans-serif;
+}
+.block_productscreen:hover {
+ background-color: #698f3f;
+ color: rgb(252, 252, 252);
+}
+.row_productscreen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

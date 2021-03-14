@@ -1,0 +1,59 @@
+.button_cartscreen {
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-family: "Grand Hotel",
+    cursive,
+    sans-serif;
+}
+
+.button_cartscreen:hover {
+  background-color: hsl(7, 92%, 65%);
+  color: rgb(252, 252, 252);
+}
+
+.col-1_cartscreen {
+  flex: 1 1 25rem;
+}
+
+.card_cartscreen {
+  border: 0.3rem #c0c0c0 solid;
+  background-color: hsl(7, 100%, 98%);
+  border-radius: 1rem;
+  margin: 1.5rem;
+}
+
+.card-body_cartscreen {
+  padding: 0.5rem;
+}
+
+.card-body_cartscreen>* {
+  margin-bottom: 0.5rem;
+}
+
+.block_cartscreen {
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  font-family: "Grand Hotel",
+    cursive,
+    sans-serif;
+}
+
+.block_cartscreen:hover {
+  background-color: #698f3f;
+  color: rgb(252, 252, 252);
+}
+.row_cartscreen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+.homeproduct {
+ background-color: hsl(7, 100%, 98%);
+}
+.row.center_homeproduct {
+ justify-content: center;
+ padding: 0;
+ margin: auto;
+}

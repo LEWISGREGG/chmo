@@ -1,0 +1,106 @@
+.health {
+ text-decoration: none;
+ list-style-type: none;
+}
+
+@media screen and (min-width: 800px) {
+
+ h2 {
+  font-size: 2.5rem;
+ }
+
+ h3 {
+  font-size: 1.75rem;
+ }
+}
+
+.tele {
+ padding: 5rem 0;
+}
+
+.tele-center {
+ width: 90vw;
+ margin: 0 auto;
+ max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+ .tele-center {
+  width: 95vw;
+ }
+}
+.underline {
+ width: 26rem;
+ height: 0.25rem;
+ margin-bottom: 3.25rem;
+ background: #ffe44d;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.tele-title > h2{
+ font-size: 4rem;
+ margin-bottom: 1rem;
+ text-align: center;
+ color: #575757;
+}
+
+
+.bg-red {
+ background: hsl(7, 100%, 98%);
+}
+
+.health {
+ background: hsl(7, 92%, 65%);
+ padding: 5rem 2.5rem;
+ margin-bottom: 2rem;
+ border-radius: 0.5rem;
+ text-align: center;
+ -webkit-transition: all 0.3s linear;
+ transition: all 0.3s linear;
+ color: cornsilk;
+}
+
+.tele-icon {
+ font-size: 4rem;
+ margin-bottom: 1.5rem;
+ color: cornsilk;
+}
+
+.health .underline {
+ width: 20rem;
+ height: 0.4rem;
+ -webkit-transition: all 0.3s linear;
+ transition: all 0.3s linear;
+}
+
+.health h3 {
+ -webkit-transition: all 0.3s linear;
+ transition: all 0.3s linear;
+ color: cornsilk;
+}
+.health h2 {
+ -webkit-transition: all 0.3s linear;
+ transition: all 0.3s linear;
+ color: cornsilk;
+}
+
+.health:hover {
+ background: #698f3f;
+}
+
+@media screen and (min-width: 676px) {
+ .telehealth-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 5rem;
+ }
+}
+
+@media screen and (min-width: 992px) {
+ .telehealth-center {
+  grid-template-columns: 1fr 1fr;
+ }
+}

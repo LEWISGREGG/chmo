@@ -1,0 +1,61 @@
+.sidebar {
+ flex: 0.35;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ background: rgb(142, 142, 228);
+ background: radial-gradient(circle, rgba(142, 142, 228, 1) 23%, rgba(142, 142, 228, 1) 29%, rgba(158, 158, 255, 1) 34%, rgba(63, 63, 95, 1) 71%);
+ border-right: 1px solid lightgray;
+}
+
+.sidebar__header {
+ display: flex;
+ align-items: center;
+ padding: 10px;
+ height: 50px;
+}
+
+.sidebar__avatar {
+ cursor: pointer;
+ margin: 10px;
+}
+
+.sidebar__input {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex: 1;
+ background-color: #e1e1e1;
+ color: gray;
+ border-radius: 5px;
+ padding: 5px;
+}
+
+.sidebar__input > input {
+ border: none;
+ background: transparent;
+ outline-width: 0;
+}
+
+.sidebar__chats {
+ overflow: scroll;
+ word-wrap: break-word;
+ max-width: 500px;
+}
+.sidebar__inputButton{
+ color: whitesmoke;
+}
+.sidebar__inputButton:hover {
+ transform: scale(1.3);
+}
+.sidebar__chats::-webkit-scrollbar {
+ display: none;
+}
+
+
+.sidebar__chats {
+ -ms-overflow-style: none;
+ /* IE and Edge */
+ scrollbar-width: none;
+ /* Firefox */
+}

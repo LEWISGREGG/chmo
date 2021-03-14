@@ -1,0 +1,30 @@
+
+
+h1 {
+ margin: 0
+}
+
+
+
+
+video {
+ width: 200px;
+ height: 100%;
+}
+
+
+.videos {
+ display: none;
+ justify-content: space-between;
+
+}
+
+.active {
+ display: flex;
+}
+
+.videos div {
+ display: flex;
+ flex-direction: column-reverse;
+ align-items: center;
+}

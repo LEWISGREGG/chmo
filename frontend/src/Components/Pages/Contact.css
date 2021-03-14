@@ -1,0 +1,126 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --slantedText: "Grand Hotel", cursive;
+ --primaryColor: #698f3f;
+ --secondaryColor: #fca311;
+ --mainDark: #3a3e3b;
+ --mainWhite: #fff;
+ --mainGrey: hsl(7, 100%, 98%);
+ --mainTransition: all 0.3s ease-in-out;
+ --letterSpacing: 0.5rem;
+}
+/* clearfix */
+.clearfix::after,
+.clearfix::before {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+.section_center {
+ padding: 4rem 0;
+ width: 80vw;
+ max-width: 1170px;
+ margin: 0 auto;
+}
+
+.section_subtitle {
+ font-size: 2rem;
+ font-family: var(--slantedText);
+ letter-spacing: var(--letterSpacing);
+ text-transform: capitalize;
+ color: var(--primaryColor);
+}
+
+.section_title {
+ font-size: 2rem;
+ text-transform: uppercase;
+}
+.text_center {
+ text-align: center;
+}
+/* services */
+.services {
+ background: var(--mainGrey);
+}
+
+.services_title {
+ padding-top: 4rem;
+}
+
+.service_card {
+ border: 0.3rem solid var(--primaryColor);
+ padding: 0.2rem;
+ border-radius: 1rem;
+ margin: 2rem 0;
+ /* box shadow styling */
+ -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+ -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+ box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+ transition: var(--mainTransition);
+
+}
+
+.service_card:hover {
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+ box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+.service_info {
+ background: var(--primaryColor);
+ border-bottom-left-radius: 0.5rem;
+ border-bottom-right-radius: 0.5rem;
+ text-align: center;
+ font-size: 1.3rem;
+ letter-spacing: var(--letterSpacing);
+ color: var(--mainWhite);
+ text-transform: capitalize;
+ padding: 2.5rem 0 1rem 0;
+}
+
+
+
+@media screen and (min-width: 768px) {
+ .service_card {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  /* 100%  90% */
+ }
+}
+
+@media screen and (min-width: 992px) {
+ .service_card {
+  float: left;
+  width: 30%;
+  margin-right: 3.333%;
+  /* 100%  90% */
+ }
+}
+
+.service_img_container {
+ position: relative;
+}
+
+.service_icon {
+ position: absolute;
+ bottom: -100%;
+ left: 50%;
+ font-size: 2rem;
+ background: var(--secondaryColor);
+ padding: 0.25rem 0.6rem;
+ border-radius: 50%;
+ border: 0.2rem solid var(--primaryColor);
+ color: var(--mainDark);
+ transform: translate(-50%, 50%);
+
+}
+
