@@ -25,9 +25,10 @@ app.get('/api/products/:id', (req, res) => {
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
 app.use('/api/orders', orderRouter);
-app.get('/', (req, res) => {
-  res.send('Server is ready');
-});
+app.use(express.static(path.join(__dirname, '/frontend/build')));
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
+);
 app.get('/api/products', (req, res) => {
   res.send(data.products);
 });
